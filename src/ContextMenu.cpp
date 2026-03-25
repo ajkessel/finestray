@@ -310,6 +310,9 @@ bool addMenuItemForWindow(HMENU menu, HWND hwnd, unsigned int id, const BitmapHa
 {
     std::string title = WindowInfo::getTitle(hwnd);
     constexpr size_t maxTitleLength = 30;
+    if (title.length() < 1) {
+        return true;
+    }
     if (title.length() > maxTitleLength) {
         const std::string_view ellipsis = "...";
         title.resize(maxTitleLength - ellipsis.length());
