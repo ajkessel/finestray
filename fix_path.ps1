@@ -1,1 +1,0 @@
-$ENV:PATH+=";C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\Llvm\x64\bin;C:\Program Files (x86)\NSIS;C:\Program Files (x86)\Microsoft Visual Studio\Installer;C:\Program Files\ImageMagick-7.1.2-Q16-HDRI"
