@@ -38,24 +38,44 @@ C:\apps\src\finestray\build\ninja-msvc\Debug>set VSTUDIO_INSTALL_DIR=C:\Program 
 ** Copyright (c) 2025 Microsoft Corporation
 **********************************************************************
 [vcvarsall.bat] Environment initialized for: 'x64'
--- Configuring done (0.5s)
+-- Configuring done (0.6s)
 -- Generating done (0.1s)
 -- Build files have been written to: C:/apps/src/finestray/build/ninja-msvc/Debug
-[1/29] Building RC object CMakeFiles\Finestray.dir\src\Finestray.rc.res
-[2/29] Scanning C:\apps\src\finestray\src\Helpers.cpp for CXX dependencies
-[3/29] Scanning C:\apps\src\finestray\src\ContextMenu.cpp for CXX dependencies
-[4/29] Scanning C:\apps\src\finestray\src\Path.cpp for CXX dependencies
-[5/29] Scanning C:\apps\src\finestray\src\SettingsDialog.cpp for CXX dependencies
-[6/29] Scanning C:\apps\src\finestray\src\Settings.cpp for CXX dependencies
-[7/29] Scanning C:\apps\src\finestray\src\Finestray.cpp for CXX dependencies
-[8/29] Generating CXX dyndep file CMakeFiles\Finestray.dir\CXX.dd
-[9/15] Building CXX object CMakeFiles\Finestray.dir\src\Helpers.cpp.obj
-[10/15] Building CXX object CMakeFiles\Finestray.dir\src\Path.cpp.obj
-[11/15] Building CXX object CMakeFiles\Finestray.dir\src\ContextMenu.cpp.obj
-[12/15] Building CXX object CMakeFiles\Finestray.dir\src\SettingsDialog.cpp.obj
-[13/15] Building CXX object CMakeFiles\Finestray.dir\src\Settings.cpp.obj
-[14/15] Building CXX object CMakeFiles\Finestray.dir\src\Finestray.cpp.obj
-[15/15] Linking CXX executable Finestray.exe
+[1/39] Scanning C:\apps\src\finestray\src\Log.cpp for CXX dependencies
+[2/39] Scanning C:\apps\src\finestray\src\TrayIcon.cpp for CXX dependencies
+[3/39] Scanning C:\apps\src\finestray\src\Bitmap.cpp for CXX dependencies
+[4/39] Scanning C:\apps\src\finestray\src\File.cpp for CXX dependencies
+[5/39] Scanning C:\apps\src\finestray\src\SettingsDialog.cpp for CXX dependencies
+[6/39] Scanning C:\apps\src\finestray\src\Helpers.cpp for CXX dependencies
+[7/39] Scanning C:\apps\src\finestray\src\Modifiers.cpp for CXX dependencies
+[8/39] Scanning C:\apps\src\finestray\src\StringUtility.cpp for CXX dependencies
+[9/39] Scanning C:\apps\src\finestray\src\AboutDialog.cpp for CXX dependencies
+[10/39] Scanning C:\apps\src\finestray\src\Hotkey.cpp for CXX dependencies
+[11/39] Building RC object CMakeFiles\Finestray.dir\src\Finestray.rc.res
+[12/39] Scanning C:\apps\src\finestray\src\WindowTracker.cpp for CXX dependencies
+[13/39] Scanning C:\apps\src\finestray\src\Path.cpp for CXX dependencies
+[14/39] Scanning C:\apps\src\finestray\src\ContextMenu.cpp for CXX dependencies
+[15/39] Scanning C:\apps\src\finestray\src\Settings.cpp for CXX dependencies
+[16/39] Scanning C:\apps\src\finestray\src\WindowInfo.cpp for CXX dependencies
+[17/39] Scanning C:\apps\src\finestray\src\Finestray.cpp for CXX dependencies
+[18/39] Generating CXX dyndep file CMakeFiles\Finestray.dir\CXX.dd
+[19/35] Building CXX object CMakeFiles\Finestray.dir\src\Modifiers.cpp.obj
+[20/35] Building CXX object CMakeFiles\Finestray.dir\src\Bitmap.cpp.obj
+[21/35] Building CXX object CMakeFiles\Finestray.dir\src\AboutDialog.cpp.obj
+[22/35] Building CXX object CMakeFiles\Finestray.dir\src\File.cpp.obj
+[23/35] Building CXX object CMakeFiles\Finestray.dir\src\Helpers.cpp.obj
+[24/35] Building CXX object CMakeFiles\Finestray.dir\src\Log.cpp.obj
+[25/35] Building CXX object CMakeFiles\Finestray.dir\src\TrayIcon.cpp.obj
+[26/35] Building CXX object CMakeFiles\Finestray.dir\src\WindowInfo.cpp.obj
+[27/35] Building CXX object CMakeFiles\Finestray.dir\src\Path.cpp.obj
+[28/35] Building CXX object CMakeFiles\Finestray.dir\src\SettingsDialog.cpp.obj
+[29/35] Building CXX object CMakeFiles\Finestray.dir\src\Hotkey.cpp.obj
+[30/35] Building CXX object CMakeFiles\Finestray.dir\src\StringUtility.cpp.obj
+[31/35] Building CXX object CMakeFiles\Finestray.dir\src\WindowTracker.cpp.obj
+[32/35] Building CXX object CMakeFiles\Finestray.dir\src\ContextMenu.cpp.obj
+[33/35] Building CXX object CMakeFiles\Finestray.dir\src\Settings.cpp.obj
+[34/35] Building CXX object CMakeFiles\Finestray.dir\src\Finestray.cpp.obj
+[35/35] Linking CXX executable Finestray.exe
 **********************************************************************
 ** Visual Studio 2022 Developer Command Prompt v17.14.29
 ** Copyright (c) 2025 Microsoft Corporation
@@ -64,11 +84,147 @@ C:\apps\src\finestray\build\ninja-msvc\Debug>set VSTUDIO_INSTALL_DIR=C:\Program 
 -- Configuring done (0.5s)
 -- Generating done (0.1s)
 -- Build files have been written to: C:/apps/src/finestray/build/ninja-msvc/Release
-[1/29] Building RC object CMakeFiles\Finestray.dir\src\Finestray.rc.res
-[2/29] Scanning C:\apps\src\finestray\src\Helpers.cpp for CXX dependencies
-[3/29] Scanning C:\apps\src\finestray\src\ContextMenu.cpp for CXX dependencies
-[4/29] Scanning C:\apps\src\finestray\src\Path.cpp for CXX dependencies
-[5/29] Scanning C:\apps\src\finestray\src\SettingsDialog.cpp for CXX dependencies
-[6/29] Scanning C:\apps\src\finestray\src\Finestray.cpp for CXX dependencies
-[7/29] Scanning C:\apps\src\finestray\src\Settings.cpp for CXX dependencies
-[8/29] Generating CXX dyndep file CMakeFiles\Finestray.dir\CXX.dd
+[1/39] Scanning C:\apps\src\finestray\src\File.cpp for CXX dependencies
+[2/39] Scanning C:\apps\src\finestray\src\Log.cpp for CXX dependencies
+[3/39] Scanning C:\apps\src\finestray\src\Helpers.cpp for CXX dependencies
+[4/39] Scanning C:\apps\src\finestray\src\Bitmap.cpp for CXX dependencies
+[5/39] Scanning C:\apps\src\finestray\src\TrayIcon.cpp for CXX dependencies
+[6/39] Scanning C:\apps\src\finestray\src\Modifiers.cpp for CXX dependencies
+[7/39] Scanning C:\apps\src\finestray\src\Hotkey.cpp for CXX dependencies
+[8/39] Scanning C:\apps\src\finestray\src\AboutDialog.cpp for CXX dependencies
+[9/39] Scanning C:\apps\src\finestray\src\SettingsDialog.cpp for CXX dependencies
+[10/39] Scanning C:\apps\src\finestray\src\WindowInfo.cpp for CXX dependencies
+[11/39] Scanning C:\apps\src\finestray\src\StringUtility.cpp for CXX dependencies
+[12/39] Scanning C:\apps\src\finestray\src\Path.cpp for CXX dependencies
+[13/39] Scanning C:\apps\src\finestray\src\ContextMenu.cpp for CXX dependencies
+[14/39] Scanning C:\apps\src\finestray\src\WindowTracker.cpp for CXX dependencies
+[15/39] Scanning C:\apps\src\finestray\src\Settings.cpp for CXX dependencies
+[16/39] Scanning C:\apps\src\finestray\src\Finestray.cpp for CXX dependencies
+[17/39] Building RC object CMakeFiles\Finestray.dir\src\Finestray.rc.res
+[18/39] Generating CXX dyndep file CMakeFiles\Finestray.dir\CXX.dd
+[19/35] Building CXX object CMakeFiles\Finestray.dir\src\Log.cpp.obj
+[20/35] Building CXX object CMakeFiles\Finestray.dir\src\File.cpp.obj
+[21/35] Building CXX object CMakeFiles\Finestray.dir\src\Helpers.cpp.obj
+[22/35] Building CXX object CMakeFiles\Finestray.dir\src\Modifiers.cpp.obj
+[23/35] Building CXX object CMakeFiles\Finestray.dir\src\Bitmap.cpp.obj
+[24/35] Building CXX object CMakeFiles\Finestray.dir\src\AboutDialog.cpp.obj
+[25/35] Building CXX object CMakeFiles\Finestray.dir\src\TrayIcon.cpp.obj
+[26/35] Building CXX object CMakeFiles\Finestray.dir\src\Path.cpp.obj
+[27/35] Building CXX object CMakeFiles\Finestray.dir\src\WindowInfo.cpp.obj
+[28/35] Building CXX object CMakeFiles\Finestray.dir\src\SettingsDialog.cpp.obj
+[29/35] Building CXX object CMakeFiles\Finestray.dir\src\StringUtility.cpp.obj
+[30/35] Building CXX object CMakeFiles\Finestray.dir\src\Hotkey.cpp.obj
+[31/35] Building CXX object CMakeFiles\Finestray.dir\src\ContextMenu.cpp.obj
+[32/35] Building CXX object CMakeFiles\Finestray.dir\src\WindowTracker.cpp.obj
+[33/35] Building CXX object CMakeFiles\Finestray.dir\src\Settings.cpp.obj
+[34/35] Building CXX object CMakeFiles\Finestray.dir\src\Finestray.cpp.obj
+[35/35] Linking CXX executable Finestray.exe
+[0/1] Run CPack packaging tool...
+CPack: Create package using NSIS64
+CPack: Install projects
+CPack: - Install project: Finestray []
+CPack: Create package
+CPack: - package: C:/apps/src/finestray/build/ninja-msvc/Release/Finestray-0.5-win64.exe generated.
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.29
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+-- Configuring done (0.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/apps/src/finestray/build/ninja-msvc/Analyze
+[1/39] Scanning C:\apps\src\finestray\src\File.cpp for CXX dependencies
+[2/39] Scanning C:\apps\src\finestray\src\Log.cpp for CXX dependencies
+[3/39] Scanning C:\apps\src\finestray\src\Bitmap.cpp for CXX dependencies
+[4/39] Scanning C:\apps\src\finestray\src\SettingsDialog.cpp for CXX dependencies
+[5/39] Scanning C:\apps\src\finestray\src\Helpers.cpp for CXX dependencies
+[6/39] Scanning C:\apps\src\finestray\src\AboutDialog.cpp for CXX dependencies
+[7/39] Scanning C:\apps\src\finestray\src\Modifiers.cpp for CXX dependencies
+[8/39] Scanning C:\apps\src\finestray\src\StringUtility.cpp for CXX dependencies
+[9/39] Scanning C:\apps\src\finestray\src\Hotkey.cpp for CXX dependencies
+[10/39] Scanning C:\apps\src\finestray\src\Path.cpp for CXX dependencies
+[11/39] Building RC object CMakeFiles\Finestray.dir\src\Finestray.rc.res
+[12/39] Scanning C:\apps\src\finestray\src\ContextMenu.cpp for CXX dependencies
+[13/39] Scanning C:\apps\src\finestray\src\Settings.cpp for CXX dependencies
+[14/39] Scanning C:\apps\src\finestray\src\Finestray.cpp for CXX dependencies
+[15/39] Scanning C:\apps\src\finestray\src\TrayIcon.cpp for CXX dependencies
+[16/39] Scanning C:\apps\src\finestray\src\WindowInfo.cpp for CXX dependencies
+[17/39] Scanning C:\apps\src\finestray\src\WindowTracker.cpp for CXX dependencies
+[18/39] Generating CXX dyndep file CMakeFiles\Finestray.dir\CXX.dd
+[19/35] Building CXX object CMakeFiles\Finestray.dir\src\File.cpp.obj
+[20/35] Building CXX object CMakeFiles\Finestray.dir\src\Helpers.cpp.obj
+[21/35] Building CXX object CMakeFiles\Finestray.dir\src\Modifiers.cpp.obj
+[22/35] Building CXX object CMakeFiles\Finestray.dir\src\Bitmap.cpp.obj
+[23/35] Building CXX object CMakeFiles\Finestray.dir\src\AboutDialog.cpp.obj
+[24/35] Building CXX object CMakeFiles\Finestray.dir\src\Log.cpp.obj
+[25/35] Building CXX object CMakeFiles\Finestray.dir\src\TrayIcon.cpp.obj
+[26/35] Building CXX object CMakeFiles\Finestray.dir\src\WindowInfo.cpp.obj
+[27/35] Building CXX object CMakeFiles\Finestray.dir\src\Path.cpp.obj
+[28/35] Building CXX object CMakeFiles\Finestray.dir\src\StringUtility.cpp.obj
+[29/35] Building CXX object CMakeFiles\Finestray.dir\src\SettingsDialog.cpp.obj
+[30/35] Building CXX object CMakeFiles\Finestray.dir\src\Hotkey.cpp.obj
+[31/35] Building CXX object CMakeFiles\Finestray.dir\src\ContextMenu.cpp.obj
+[32/35] Building CXX object CMakeFiles\Finestray.dir\src\WindowTracker.cpp.obj
+[33/35] Building CXX object CMakeFiles\Finestray.dir\src\Settings.cpp.obj
+[34/35] Building CXX object CMakeFiles\Finestray.dir\src\Finestray.cpp.obj
+[35/35] Linking CXX executable Finestray.exe
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.29
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+-- Configuring done (0.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/apps/src/finestray/build/ninja-clang/Debug
+[1/38] Scanning C:/apps/src/finestray/src/AboutDialog.cpp for CXX dependencies
+[2/38] Scanning C:/apps/src/finestray/src/Bitmap.cpp for CXX dependencies
+[3/38] Scanning C:/apps/src/finestray/src/Helpers.cpp for CXX dependencies
+[4/38] Scanning C:/apps/src/finestray/src/Hotkey.cpp for CXX dependencies
+[5/38] Scanning C:/apps/src/finestray/src/File.cpp for CXX dependencies
+[6/38] Scanning C:/apps/src/finestray/src/ContextMenu.cpp for CXX dependencies
+[7/38] Scanning C:/apps/src/finestray/src/Log.cpp for CXX dependencies
+[8/38] Scanning C:/apps/src/finestray/src/Finestray.cpp for CXX dependencies
+[9/38] Scanning C:/apps/src/finestray/src/Modifiers.cpp for CXX dependencies
+[10/38] Scanning C:/apps/src/finestray/src/Path.cpp for CXX dependencies
+[11/38] Scanning C:/apps/src/finestray/src/WindowInfo.cpp for CXX dependencies
+[12/38] Scanning C:/apps/src/finestray/src/Settings.cpp for CXX dependencies
+[13/38] Scanning C:/apps/src/finestray/src/SettingsDialog.cpp for CXX dependencies
+[14/38] Scanning C:/apps/src/finestray/src/TrayIcon.cpp for CXX dependencies
+[15/38] Scanning C:/apps/src/finestray/src/WindowTracker.cpp for CXX dependencies
+[16/38] Scanning C:/apps/src/finestray/src/StringUtility.cpp for CXX dependencies
+[17/38] Generating CXX dyndep file CMakeFiles/Finestray.dir/CXX.dd
+[18/34] Building CXX object CMakeFiles/Finestray.dir/src/AboutDialog.cpp.obj
+[19/34] Building CXX object CMakeFiles/Finestray.dir/src/File.cpp.obj
+[20/34] Building CXX object CMakeFiles/Finestray.dir/src/Bitmap.cpp.obj
+[21/34] Building CXX object CMakeFiles/Finestray.dir/src/Modifiers.cpp.obj
+[22/34] Building CXX object CMakeFiles/Finestray.dir/src/Helpers.cpp.obj
+[23/34] Building CXX object CMakeFiles/Finestray.dir/src/Log.cpp.obj
+[24/34] Building CXX object CMakeFiles/Finestray.dir/src/Path.cpp.obj
+[25/34] Building CXX object CMakeFiles/Finestray.dir/src/Hotkey.cpp.obj
+[26/34] Building CXX object CMakeFiles/Finestray.dir/src/WindowInfo.cpp.obj
+[27/34] Building CXX object CMakeFiles/Finestray.dir/src/TrayIcon.cpp.obj
+[28/34] Building CXX object CMakeFiles/Finestray.dir/src/ContextMenu.cpp.obj
+[29/34] Building CXX object CMakeFiles/Finestray.dir/src/SettingsDialog.cpp.obj
+[30/34] Building CXX object CMakeFiles/Finestray.dir/src/StringUtility.cpp.obj
+[31/34] Building CXX object CMakeFiles/Finestray.dir/src/WindowTracker.cpp.obj
+[32/34] Building CXX object CMakeFiles/Finestray.dir/src/Settings.cpp.obj
+[33/34] Building CXX object CMakeFiles/Finestray.dir/src/Finestray.cpp.obj
+[34/34] Linking CXX executable Finestray.exe
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.29
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+-- The C compiler identification is Clang 19.1.5 with GNU-like command-line
+-- The CXX compiler identification is Clang 19.1.5 with GNU-like command-line
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/Llvm/x64/bin/clang.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/Llvm/x64/bin/clang.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Patch: C:/Program Files/Git/usr/bin/patch.exe

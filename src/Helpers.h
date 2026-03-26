@@ -19,7 +19,7 @@
 
 // Windows
 #include <Windows.h>
-#include <shobjidl.h>
+#include <ShObjIdl.h>
 #include <comdef.h>
 
 // Standard library
@@ -41,10 +41,6 @@ void errorMessage(const ErrorContext & errorContext);
 
 // RAII wrapper that creates the IVirtualDesktopManager once and
 // caches it for the lifetime of the object (typically your app).
-#include <Windows.h>
-#include <shobjidl.h>
-#include <comdef.h>
-
 class VirtualDesktopHelper
 {
 public:
@@ -151,3 +147,5 @@ private:
     bool                    m_comReady;
     IVirtualDesktopManager* m_pVDM;
 };
+
+extern VirtualDesktopHelper g_vdHelper;

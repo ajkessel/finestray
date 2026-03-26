@@ -27,8 +27,6 @@
 #include "WindowInfo.h"
 #include "WindowTracker.h"
 
-extern VirtualDesktopHelper g_vdHelper;
-
 namespace
 {
 
