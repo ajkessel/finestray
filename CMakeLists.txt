@@ -126,6 +126,7 @@ target_compile_options(Finestray
                 /analyze # enable static analysis
                 /wd26485 # No array to pointer decay
                 /wd26490 # Don't use reinterpret_cast
+                /wd6553  # Windows SDK annotation bug: RegOpenKeyExW _Param_(3)
             >
         >
 
