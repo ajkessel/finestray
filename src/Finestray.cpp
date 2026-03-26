@@ -46,6 +46,7 @@
 #include <WinUser.h>
 #include <Windows.h>
 
+
 // Standard library
 #include <cassert>
 #include <ranges>
@@ -53,6 +54,8 @@
 #include <string>
 #include <string_view>
 #include <vector>
+
+VirtualDesktopHelper g_vdHelper;
 
 namespace
 {
@@ -182,6 +185,12 @@ int WINAPI wWinMain(_In_ HINSTANCE hinstance, _In_opt_ HINSTANCE hPrevInstance, 
     settings_.dump();
 
     IconHandleWrapper icon(LoadIcon(hinstance, MAKEINTRESOURCE(IDI_FINESTRAY)), IconHandleWrapper::Mode::Referenced);
+
+    DEBUG_PRINTF("initializing virtual desktop helper\n");
+    if (!g_vdHelper.Init())
+    {
+        ERROR_PRINTF("could not initialize virtual desktop helper\n");
+    }
 
     DEBUG_PRINTF("registering window class\n");
     WNDCLASSEXA wc;

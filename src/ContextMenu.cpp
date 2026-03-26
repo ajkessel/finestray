@@ -27,6 +27,8 @@
 #include "WindowInfo.h"
 #include "WindowTracker.h"
 
+extern VirtualDesktopHelper g_vdHelper;
+
 namespace
 {
 
@@ -74,7 +76,7 @@ bool show(HWND hwnd, MinimizePlacement minimizePlacement)
 
     if (minimizePlacementIncludesMenu(minimizePlacement)) {
         WindowTracker::enumerate([&](const WindowTracker::Item & item) {
-            if (item.visible_) {
+            if (g_vdHelper.IsOnCurrentDesktop(item.hwnd_) && (item.visible_)) {
                 visibleWindows_.push_back(item.hwnd_);
             } else if (item.minimized_) {
                 minimizedWindows_.push_back(item.hwnd_);
@@ -310,7 +312,7 @@ bool addMenuItemForWindow(HMENU menu, HWND hwnd, unsigned int id, const BitmapHa
 {
     std::string title = WindowInfo::getTitle(hwnd);
     constexpr size_t maxTitleLength = 30;
-    if (title.length() < 1) {
+    if (title.length() < 1 || title == "Windows Virtual Desktop Manager") {
         return true;
     }
     if (title.length() > maxTitleLength) {
