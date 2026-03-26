@@ -309,6 +309,8 @@ void Settings::normalize()
             continue;
         }
 
+        autoTray.executable_ = StringUtility::toLower(autoTray.executable_);
+
         if (autoTray.trayEvent_ == TrayEvent::None) {
             DEBUG_PRINTF("Changing auto-tray item with no event to minimize\n");
             autoTray.trayEvent_ = TrayEvent::Minimize;

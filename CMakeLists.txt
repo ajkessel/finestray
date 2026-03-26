@@ -26,7 +26,7 @@ if (CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
 endif()
 
 project(Finestray
-    VERSION 0.4
+    VERSION 0.5
 )
 
 add_executable(Finestray WIN32

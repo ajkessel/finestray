@@ -26,8 +26,8 @@
 #include <cassert>
 #include <list>
 #include <memory>
-#include <ranges>
 #include <string>
+#include <unordered_map>
 
 namespace
 {
@@ -36,6 +36,7 @@ typedef std::list<WindowTracker::Item> Items;
 
 HWND messageHwnd_;
 Items items_;
+std::unordered_map<HWND, Items::iterator> itemIndex_;
 bool enumerating_;
 
 Items::iterator findWindow(HWND hwnd);
@@ -60,6 +61,7 @@ void stop() noexcept
 
     assert(!enumerating_);
     items_.clear();
+    itemIndex_.clear();
 
     messageHwnd_ = nullptr;
 }
@@ -90,6 +92,7 @@ void windowDestroyed(HWND hwnd)
         return;
     }
 
+    itemIndex_.erase(hwnd);
     items_.erase(it);
 
     DEBUG_PRINTF("window destroyed: %zu items remaining\n", items_.size());
@@ -172,6 +175,7 @@ void minimize(HWND hwnd, MinimizePlacement minimizePlacement, MinimizePersistenc
     // move item to end of list so restore order is reverse of minimize order
     items_.push_back(item);
     items_.erase(it);
+    itemIndex_[hwnd] = std::prev(items_.end());
 }
 
 void restore(HWND hwnd)
@@ -209,6 +213,7 @@ void restore(HWND hwnd)
     // move item to front of list so next restore is in reverse order of minimize
     items_.push_front(item);
     items_.erase(it);
+    itemIndex_[hwnd] = items_.begin();
 }
 
 void addAllMinimizedToTray(MinimizePlacement minimizePlacement)
@@ -310,9 +315,10 @@ Items::iterator findWindow(HWND hwnd)
 {
     assert(!enumerating_);
 
-    return std::ranges::find_if(items_, [hwnd](const WindowTracker::Item & item) {
-        return item.hwnd_ == hwnd;
-    });
+    const auto mapIt = itemIndex_.find(hwnd);
+    if (mapIt == itemIndex_.end())
+        return items_.end();
+    return mapIt->second;
 }
 
 void addItem(HWND hwnd) noexcept
@@ -328,6 +334,7 @@ void addItem(HWND hwnd) noexcept
     item.title_ = title;
     item.visible_ = visible;
     items_.push_back(item);
+    itemIndex_[hwnd] = std::prev(items_.end());
 }
 
 void updateItem(WindowTracker::Item & item, HWND hwnd) noexcept

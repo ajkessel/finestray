@@ -109,6 +109,7 @@ Hotkey hotkeyMenu_;
 UINT modifiersOverride_;
 UINT taskbarCreatedMessage_;
 UINT shellHookMsg_;
+std::vector<std::regex> compiledAutoTrayRegexes_;
 
 } // anonymous namespace
 
@@ -674,13 +675,18 @@ ErrorContext start()
         return { IDS_ERROR_REGISTER_MODIFIER, "override" };
     }
 
-    // check auto-tray regular expressions to surface an error if needed
+    // check auto-tray regular expressions and build compiled regex cache
+    compiledAutoTrayRegexes_.clear();
+    compiledAutoTrayRegexes_.reserve(settings_.autoTrays_.size());
     for (const Settings::AutoTray & autoTray : settings_.autoTrays_) {
-        try {
-            const std::regex re(autoTray.windowTitle_);
-            static_cast<void>(re);
-        } catch (const std::regex_error & e) {
-            return { IDS_ERROR_PARSE_REGEX, "'" + autoTray.windowTitle_ + "': " + e.what() };
+        if (autoTray.windowTitle_.empty()) {
+            compiledAutoTrayRegexes_.emplace_back();
+        } else {
+            try {
+                compiledAutoTrayRegexes_.emplace_back(autoTray.windowTitle_);
+            } catch (const std::regex_error & e) {
+                return { IDS_ERROR_PARSE_REGEX, "'" + autoTray.windowTitle_ + "': " + e.what() };
+            }
         }
     }
 
@@ -714,7 +720,12 @@ bool windowShouldAutoTray(HWND hwnd, TrayEvent trayEvent, MinimizePersistence * 
     DEBUG_PRINTF("\ttitle: '%s'\n", windowInfo.title().c_str());
     DEBUG_PRINTF("\tclass: '%s'\n", windowInfo.className().c_str());
 
-    for (const Settings::AutoTray & autoTray : settings_.autoTrays_) {
+    // executable_ is pre-lowercased in Settings::normalize(), so only lowercase once here
+    const std::string executableLower = StringUtility::toLower(windowInfo.executable());
+
+    for (size_t i = 0; i < settings_.autoTrays_.size(); ++i) {
+        const Settings::AutoTray & autoTray = settings_.autoTrays_[i];
+
         bool classMatch = false;
         if (autoTray.windowClass_.empty()) {
             // DEBUG_PRINTF("\twindow class match (empty)\n");
@@ -735,7 +746,7 @@ bool windowShouldAutoTray(HWND hwnd, TrayEvent trayEvent, MinimizePersistence * 
             // DEBUG_PRINTF("\texecutable match (empty)\n");
             executableMatch = true;
         } else {
-            if (StringUtility::toLower(autoTray.executable_) == StringUtility::toLower(windowInfo.executable())) {
+            if (autoTray.executable_ == executableLower) {
                 // DEBUG_PRINTF("\texecutable '%s' match\n", autoTray.executable_.c_str());
                 executableMatch = true;
             }
@@ -749,10 +760,9 @@ bool windowShouldAutoTray(HWND hwnd, TrayEvent trayEvent, MinimizePersistence * 
         if (autoTray.windowTitle_.empty()) {
             // DEBUG_PRINTF("\twindow title match (empty)\n");
             titleMatch = true;
-        } else {
+        } else if (i < compiledAutoTrayRegexes_.size()) {
             try {
-                const std::regex re(autoTray.windowTitle_);
-                if (std::regex_match(windowInfo.title(), re)) {
+                if (std::regex_match(windowInfo.title(), compiledAutoTrayRegexes_[i])) {
                     // DEBUG_PRINTF("\twindow title '%s' match\n", autoTray.windowTitle_.c_str());
                     titleMatch = true;
                 }
