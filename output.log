@@ -1,0 +1,74 @@
+Updating version from 0.5 to 0.5
+Updating CHANGELOG.md
+Updating CMakeLists.txt
+Updating README.md
+Updating AppInfo.h
+Building
+
+C:\apps\src\finestray>setlocal enabledelayedexpansion 
+
+C:\apps\src\finestray>pushd C:\apps\src\finestray\ 
+
+C:\apps\src\finestray>call ninja-msvc-build.bat Debug 
+
+C:\apps\src\finestray>setlocal enabledelayedexpansion 
+
+C:\apps\src\finestray>set BUILD_CONFIG=Debug 
+
+C:\apps\src\finestray>if "Debug" == "" set BUILD_CONFIG=Debug 
+
+C:\apps\src\finestray>set BUILD_DIR=build\ninja-msvc\Debug 
+
+C:\apps\src\finestray>if not exist build\ninja-msvc\Debug mkdir build\ninja-msvc\Debug 
+
+C:\apps\src\finestray>pushd build\ninja-msvc\Debug 
+
+C:\apps\src\finestray\build\ninja-msvc\Debug>if not defined VCINSTALLDIR (
+rem get latest visual studio install location  
+ rem for /f "tokens=* USEBACKQ" %x in (`powershell -command "(Get-CimInstance MSFT_VSInstance | Select-Object -Last 1).InstallLocation"`) do set VSTUDIO_INSTALL_DIR=%x  
+ rem winget install vswhere  
+ for /F "tokens=* USEBACKQ" %x in (`vswhere -latest -property installationPath`) do set VSTUDIO_INSTALL_DIR=%x  
+ rem set environment for visual studio command line builds  
+ call "!VSTUDIO_INSTALL_DIR!\VC\Auxiliary\Build\vcvars64.bat" 
+) 
+
+C:\apps\src\finestray\build\ninja-msvc\Debug>set VSTUDIO_INSTALL_DIR=C:\Program Files\Microsoft Visual Studio\2022\Community 
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.29
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+-- Configuring done (0.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/apps/src/finestray/build/ninja-msvc/Debug
+[1/29] Building RC object CMakeFiles\Finestray.dir\src\Finestray.rc.res
+[2/29] Scanning C:\apps\src\finestray\src\Helpers.cpp for CXX dependencies
+[3/29] Scanning C:\apps\src\finestray\src\ContextMenu.cpp for CXX dependencies
+[4/29] Scanning C:\apps\src\finestray\src\Path.cpp for CXX dependencies
+[5/29] Scanning C:\apps\src\finestray\src\SettingsDialog.cpp for CXX dependencies
+[6/29] Scanning C:\apps\src\finestray\src\Settings.cpp for CXX dependencies
+[7/29] Scanning C:\apps\src\finestray\src\Finestray.cpp for CXX dependencies
+[8/29] Generating CXX dyndep file CMakeFiles\Finestray.dir\CXX.dd
+[9/15] Building CXX object CMakeFiles\Finestray.dir\src\Helpers.cpp.obj
+[10/15] Building CXX object CMakeFiles\Finestray.dir\src\Path.cpp.obj
+[11/15] Building CXX object CMakeFiles\Finestray.dir\src\ContextMenu.cpp.obj
+[12/15] Building CXX object CMakeFiles\Finestray.dir\src\SettingsDialog.cpp.obj
+[13/15] Building CXX object CMakeFiles\Finestray.dir\src\Settings.cpp.obj
+[14/15] Building CXX object CMakeFiles\Finestray.dir\src\Finestray.cpp.obj
+[15/15] Linking CXX executable Finestray.exe
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.29
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+-- Configuring done (0.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/apps/src/finestray/build/ninja-msvc/Release
+[1/29] Building RC object CMakeFiles\Finestray.dir\src\Finestray.rc.res
+[2/29] Scanning C:\apps\src\finestray\src\Helpers.cpp for CXX dependencies
+[3/29] Scanning C:\apps\src\finestray\src\ContextMenu.cpp for CXX dependencies
+[4/29] Scanning C:\apps\src\finestray\src\Path.cpp for CXX dependencies
+[5/29] Scanning C:\apps\src\finestray\src\SettingsDialog.cpp for CXX dependencies
+[6/29] Scanning C:\apps\src\finestray\src\Finestray.cpp for CXX dependencies
+[7/29] Scanning C:\apps\src\finestray\src\Settings.cpp for CXX dependencies
+[8/29] Generating CXX dyndep file CMakeFiles\Finestray.dir\CXX.dd
