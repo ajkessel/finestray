@@ -228,3 +228,142 @@ CPack: - package: C:/apps/src/finestray/build/ninja-msvc/Release/Finestray-0.5-w
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Found Patch: C:/Program Files/Git/usr/bin/patch.exe
+-- Performing Test FLAG_SUPPORTED_stdc89
+-- Performing Test FLAG_SUPPORTED_stdc89 - Success
+-- Performing Test FLAG_SUPPORTED_pedantic
+-- Performing Test FLAG_SUPPORTED_pedantic - Success
+-- Performing Test FLAG_SUPPORTED_Wall
+-- Performing Test FLAG_SUPPORTED_Wall - Success
+-- Performing Test FLAG_SUPPORTED_Wextra
+-- Performing Test FLAG_SUPPORTED_Wextra - Success
+-- Performing Test FLAG_SUPPORTED_Werror
+-- Performing Test FLAG_SUPPORTED_Werror - Success
+-- Performing Test FLAG_SUPPORTED_Wstrictprototypes
+-- Performing Test FLAG_SUPPORTED_Wstrictprototypes - Success
+-- Performing Test FLAG_SUPPORTED_Wwritestrings
+-- Performing Test FLAG_SUPPORTED_Wwritestrings - Success
+-- Performing Test FLAG_SUPPORTED_Wshadow
+-- Performing Test FLAG_SUPPORTED_Wshadow - Success
+-- Performing Test FLAG_SUPPORTED_Winitself
+-- Performing Test FLAG_SUPPORTED_Winitself - Success
+-- Performing Test FLAG_SUPPORTED_Wcastalign
+-- Performing Test FLAG_SUPPORTED_Wcastalign - Success
+-- Performing Test FLAG_SUPPORTED_Wformat2
+-- Performing Test FLAG_SUPPORTED_Wformat2 - Success
+-- Performing Test FLAG_SUPPORTED_Wmissingprototypes
+-- Performing Test FLAG_SUPPORTED_Wmissingprototypes - Success
+-- Performing Test FLAG_SUPPORTED_Wstrictoverflow2
+-- Performing Test FLAG_SUPPORTED_Wstrictoverflow2 - Success
+-- Performing Test FLAG_SUPPORTED_Wcastqual
+-- Performing Test FLAG_SUPPORTED_Wcastqual - Success
+-- Performing Test FLAG_SUPPORTED_Wundef
+-- Performing Test FLAG_SUPPORTED_Wundef - Success
+-- Performing Test FLAG_SUPPORTED_Wswitchdefault
+-- Performing Test FLAG_SUPPORTED_Wswitchdefault - Success
+-- Performing Test FLAG_SUPPORTED_Wconversion
+-- Performing Test FLAG_SUPPORTED_Wconversion - Success
+-- Performing Test FLAG_SUPPORTED_Wccompat
+-- Performing Test FLAG_SUPPORTED_Wccompat - Success
+-- Performing Test FLAG_SUPPORTED_fstackprotectorstrong
+-- Performing Test FLAG_SUPPORTED_fstackprotectorstrong - Success
+-- Performing Test FLAG_SUPPORTED_Wcomma
+-- Performing Test FLAG_SUPPORTED_Wcomma - Success
+-- Performing Test FLAG_SUPPORTED_Wdoublepromotion
+-- Performing Test FLAG_SUPPORTED_Wdoublepromotion - Success
+-- Performing Test FLAG_SUPPORTED_Wparentheses
+-- Performing Test FLAG_SUPPORTED_Wparentheses - Success
+-- Performing Test FLAG_SUPPORTED_Wformatoverflow
+-- Performing Test FLAG_SUPPORTED_Wformatoverflow - Success
+-- Performing Test FLAG_SUPPORTED_Wunusedmacros
+-- Performing Test FLAG_SUPPORTED_Wunusedmacros - Success
+-- Performing Test FLAG_SUPPORTED_Wmissingvariabledeclarations
+-- Performing Test FLAG_SUPPORTED_Wmissingvariabledeclarations - Success
+-- Performing Test FLAG_SUPPORTED_Wusedbutmarkedunused
+-- Performing Test FLAG_SUPPORTED_Wusedbutmarkedunused - Success
+-- Performing Test FLAG_SUPPORTED_Wswitchenum
+-- Performing Test FLAG_SUPPORTED_Wswitchenum - Success
+-- Performing Test FLAG_SUPPORTED_fvisibilityhidden
+-- Performing Test FLAG_SUPPORTED_fvisibilityhidden - Success
+-- Configuring done (24.3s)
+-- Generating done (0.2s)
+-- Build files have been written to: C:/apps/src/finestray/build/ninja-clang/Release
+[1/57] Converting C:/apps/src/finestray/src/images/finestray.svg to C:/apps/src/finestray/build/ninja-clang/Release/app.bmp
+[2/57] Converting C:/apps/src/finestray/src/images/emoji_u274c.svg to C:/apps/src/finestray/build/ninja-clang/Release/exit.bmp
+[3/57] Converting C:/apps/src/finestray/src/images/emoji_u2198.svg to C:/apps/src/finestray/build/ninja-clang/Release/minimize.bmp
+[4/57] Converting C:/apps/src/finestray/src/images/emoji_u2196.svg to C:/apps/src/finestray/build/ninja-clang/Release/restore.bmp
+[5/57] Converting C:/apps/src/finestray/src/images/emoji_u2699.svg to C:/apps/src/finestray/build/ninja-clang/Release/settings.bmp
+[6/57] Converting C:/apps/src/finestray/src/images/finestray.svg to C:/apps/src/finestray/src/images/icon.png
+[7/57] Converting C:/apps/src/finestray/src/images/finestray.svg to C:/apps/src/finestray/build/ninja-clang/Release/installer_header.bmp
+[8/57] Converting C:/apps/src/finestray/src/images/finestray.svg to C:/apps/src/finestray/build/ninja-clang/Release/installer_welcome.bmp
+[9/57] Building C object _deps/cjson-build/CMakeFiles/cjson.dir/cJSON.c.obj
+[10/57] Converting C:/apps/src/finestray/src/images/finestray.svg to C:/apps/src/finestray/build/ninja-clang/Release/Finestray.ico
+[11/57] Linking C static library _deps\cjson-build\cjson.lib
+[12/57] Converting C:/apps/src/finestray/src/images/finestray.svg to C:/apps/src/finestray/build/ninja-clang/Release/logo-1440x2160.png
+[13/57] Building RC object CMakeFiles/Finestray.dir/src/Finestray.rc.res
+Microsoft (R) Windows (R) Resource Compiler Version 10.0.10011.16384
+
+
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+
+
+[14/57] Converting C:/apps/src/finestray/src/images/settings-window.png to C:/apps/src/finestray/build/ninja-clang/Release/screenshot-3840x2160.png
+[15/57] Converting C:/apps/src/finestray/src/images/finestray.svg to C:/apps/src/finestray/build/ninja-clang/Release/logo-2160x2160.png
+[16/57] Scanning C:/apps/src/finestray/src/AboutDialog.cpp for CXX dependencies
+[17/57] Scanning C:/apps/src/finestray/src/Hotkey.cpp for CXX dependencies
+[18/57] Scanning C:/apps/src/finestray/src/MinimizePlacement.cpp for CXX dependencies
+[19/57] Scanning C:/apps/src/finestray/src/MinimizePersistence.cpp for CXX dependencies
+[20/57] Scanning C:/apps/src/finestray/src/Finestray.cpp for CXX dependencies
+[21/57] Scanning C:/apps/src/finestray/src/ContextMenu.cpp for CXX dependencies
+[22/57] Scanning C:/apps/src/finestray/src/Helpers.cpp for CXX dependencies
+[23/57] Scanning C:/apps/src/finestray/src/Bitmap.cpp for CXX dependencies
+[24/57] Scanning C:/apps/src/finestray/src/File.cpp for CXX dependencies
+[25/57] Scanning C:/apps/src/finestray/src/Log.cpp for CXX dependencies
+[26/57] Scanning C:/apps/src/finestray/src/Path.cpp for CXX dependencies
+[27/57] Scanning C:/apps/src/finestray/src/TrayEvent.cpp for CXX dependencies
+[28/57] Scanning C:/apps/src/finestray/src/Modifiers.cpp for CXX dependencies
+[29/57] Scanning C:/apps/src/finestray/src/Settings.cpp for CXX dependencies
+[30/57] Scanning C:/apps/src/finestray/src/WindowIcon.cpp for CXX dependencies
+[31/57] Scanning C:/apps/src/finestray/src/SettingsDialog.cpp for CXX dependencies
+[32/57] Scanning C:/apps/src/finestray/src/WindowInfo.cpp for CXX dependencies
+[33/57] Scanning C:/apps/src/finestray/src/StringUtility.cpp for CXX dependencies
+[34/57] Scanning C:/apps/src/finestray/src/TrayIcon.cpp for CXX dependencies
+[35/57] Scanning C:/apps/src/finestray/src/WindowTracker.cpp for CXX dependencies
+[36/57] Generating CXX dyndep file CMakeFiles/Finestray.dir/CXX.dd
+[37/57] Building CXX object CMakeFiles/Finestray.dir/src/MinimizePersistence.cpp.obj
+[38/57] Building CXX object CMakeFiles/Finestray.dir/src/MinimizePlacement.cpp.obj
+[39/57] Building CXX object CMakeFiles/Finestray.dir/src/TrayEvent.cpp.obj
+[40/57] Building CXX object CMakeFiles/Finestray.dir/src/AboutDialog.cpp.obj
+[41/57] Building CXX object CMakeFiles/Finestray.dir/src/WindowIcon.cpp.obj
+[42/57] Building CXX object CMakeFiles/Finestray.dir/src/Helpers.cpp.obj
+[43/57] Building CXX object CMakeFiles/Finestray.dir/src/Bitmap.cpp.obj
+[44/57] Building CXX object CMakeFiles/Finestray.dir/src/File.cpp.obj
+[45/57] Building CXX object CMakeFiles/Finestray.dir/src/Modifiers.cpp.obj
+[46/57] Building CXX object CMakeFiles/Finestray.dir/src/Log.cpp.obj
+[47/57] Building CXX object CMakeFiles/Finestray.dir/src/ContextMenu.cpp.obj
+[48/57] Building CXX object CMakeFiles/Finestray.dir/src/Hotkey.cpp.obj
+[49/57] Building CXX object CMakeFiles/Finestray.dir/src/WindowInfo.cpp.obj
+[50/57] Building CXX object CMakeFiles/Finestray.dir/src/Path.cpp.obj
+[51/57] Building CXX object CMakeFiles/Finestray.dir/src/TrayIcon.cpp.obj
+[52/57] Building CXX object CMakeFiles/Finestray.dir/src/StringUtility.cpp.obj
+[53/57] Building CXX object CMakeFiles/Finestray.dir/src/SettingsDialog.cpp.obj
+[54/57] Building CXX object CMakeFiles/Finestray.dir/src/WindowTracker.cpp.obj
+[55/57] Building CXX object CMakeFiles/Finestray.dir/src/Settings.cpp.obj
+[56/57] Building CXX object CMakeFiles/Finestray.dir/src/Finestray.cpp.obj
+[57/57] Linking CXX executable Finestray.exe
+[0/1] Run CPack packaging tool...
+CPack: Create package using NSIS64
+CPack: Install projects
+CPack: - Install project: Finestray []
+CPack: Create package
+CPack: - package: C:/apps/src/finestray/build/ninja-clang/Release/Finestray-0.5-win64.exe generated.
+CMake is re-running because C:/apps/src/temp/finestray/build/vstudio-msvc/CMakeFiles/generate.stamp dependency file is missing.
+Build failed
+Starting new version, please exit when done testing
+Starting new installer, please exit when done installing
+
+Updating version in git
+[virtual-desktops cbe82bb] Update version to 0.5
+ 4 files changed, 185 insertions(+), 32 deletions(-)
+Updated tag 'v0.5' (was 478c8b9)
